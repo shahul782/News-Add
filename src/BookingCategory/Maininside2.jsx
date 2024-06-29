@@ -56,9 +56,9 @@ function Maininside2() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <h2 className="font-bold text-2xl text-[#000080] mb-4">Frequently Asked Questions (FAQs) for advertising in The Hindu Newspaper:</h2>
+      <h2 className="lg:font-bold lg:text-2xl text-[#000080] sl:text-xl sl:font-bold mb-4">Frequently Asked Questions (FAQs) for advertising in The Hindu Newspaper:</h2>
 
-      <div className="p-4 w-full max-w-3xl">
+      <div className=" lg:p-4 sl:p-2 lg: w-full lg:max-w-3xl sl:w-full">
         <div
           className="flex items-center justify-between bg-slate-400 p-4 cursor-pointer rounded-2xl"
           onClick={toggleCost}

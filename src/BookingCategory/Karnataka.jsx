@@ -2,7 +2,7 @@ import React from "react";
 import hedingNews from "../assets/hinduimg.png";
 import bookonline from "../assets/Bookonline.png";
 
-const Chennai = () => {
+const Karnataka = () => {
   return (
     <div className="p-5">
       <div className="bg-[#000080] lg:flex lg:flex-row sl:flex flex-col">
@@ -10,14 +10,14 @@ const Chennai = () => {
           <img src={hedingNews} alt="news paper" className=" lg:ml-[40%] sl:ml-6 mt-2" />
         </div>
         <div className=" lg:w-[50%] sl:w-full font-bold text-white sl:p-3">
-          <p className="text-white lg:text-4xl sl:text-sm">THE HINDU CLASSIFIEDS CHENNAI</p>
+          <p className="text-white lg:text-4xl sl:text-sm">THE HINDU CLASSIFIEDS KARNATAKA</p>
           <p className="mt-3">
-            Get your Ad published in Chennai Edition of The Hindu Newspaper. We
+            Get your Ad published in karnataka Edition of The Hindu Newspaper. We
             are authorized Ad Booking Agents of The Hindu Newspaper to book
             Classifieds ads Online.
           </p>
           <p className="mt-3">
-            Newspaper Ads ➧ The Hindu Classifieds ➧ Classifieds in Chennai
+            Newspaper Ads ➧ The Hindu Classifieds ➧ Classifieds in karnataka
           </p>
         </div>
       </div>
@@ -211,13 +211,13 @@ const Chennai = () => {
       </div>
 
       <div>
-        <h1>BOOK CLASSIFIED AD IN THE HINDU NEWSPAPER IN CHENNAI</h1>
+        <h1>BOOK CLASSIFIED AD IN THE HINDU NEWSPAPER IN KARNATAKA</h1>
       </div>
       <div className="flex flex-row">
         <p className="w-[70%]">
-          If you looking to post Classified ad in Chennai Newspapers then The
+          If you looking to post Classified ad in karnataka Newspapers then The
           Hindu can be the best option. The Hindu is one of the leading
-          newspapers which has very good circulation and readership in Chennai.
+          newspapers which has very good circulation and readership in karnataka.
           Book Matrimonial, Recruitment, Property For Sale, Property To Rent,
           Name Change, Lost Found, Vehicles Sale or Purchase, Astrology,
           Business, Computers, Education, Personal Announcement, Retail,
@@ -229,14 +229,14 @@ const Chennai = () => {
         </div>
       </div>
 
-      <h1>THE HINDU'S LEADING CLASSIFIED AD AGENCY IN CHENNAI</h1>
+      <h1>THE HINDU'S LEADING CLASSIFIED AD AGENCY IN KARNATAKA</h1>
       <div className="flex justify-center items-center">
         <p>
-          We can be your trusted agents for booking ads in The Hindu Chennai
+          We can be your trusted agents for booking ads in The Hindu karnataka
           Newspaper at the lowest rates and with top-notch service. Our
-          dedicated booking center in Chennai makes it easy to post classified
+          dedicated booking center in karnataka makes it easy to post classified
           ads in the newspaper without any extra charges. We showcase attractive
-          offers and packages for advertising in The Hindu Chennai Newspaper,
+          offers and packages for advertising in The Hindu karnataka Newspaper,
           ensuring you save money and attract the best response for your ad.
           Being a leading Newspaper Ad Agency of Chennai, we offer lower cost
           for Booking Newspaper Advertisement online for The Hindu through our
@@ -244,20 +244,20 @@ const Chennai = () => {
         </p>
       </div>
 
-      <h1>CONTACT THE HINDU CHENNAI CLASSIFIEDS AD BOOKING TEAM:</h1>
+      <h1>CONTACT THE HINDU KARNATAKA CLASSIFIEDS AD BOOKING TEAM:</h1>
       <div>
         <p>
           Our friendly customer support team is here to assist you every step of
           the way, whether you're booking your ad or tracking its publication in
           the newspaper. Reach out to us via Live Chat, Phone: +918121003003, or
-          Email: customercare@ads2publish.com. As Chennai's leading Classified
+          Email: customercare@ads2publish.com. As karnatakk's leading Classified
           Ad Agency, Ads2Publish offers newspaper advertisement booking at
           competitive rates, often even lower than The Hindu's standard tariff
           rates, through our hassle-free online booking service.
         </p>
       </div>
 
-      <h1>HOW TO BOOK CLASSIFIED AD IN THE HINDU NEWSPAPER CHENNAI?</h1>
+      <h1>HOW TO BOOK CLASSIFIED AD IN THE HINDU NEWSPAPER KARNATAKA?</h1>
       <div>
         <ol className="list-decimal pl-5">
           <li>
@@ -308,4 +308,4 @@ const Chennai = () => {
   );
 };
 
-export default Chennai;
+export default Karnataka;

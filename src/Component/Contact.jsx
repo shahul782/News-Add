@@ -1,19 +1,19 @@
 import React from 'react';
 
+import email from '../assets/email-icon.jpg'
+import phone from '../assets/phone.jpg'
+
 const ContactPage = () => {
     return (
-        <div id="content_middle" className="pt-24">
-            {/* Section 1 */}
-            <div className="bg-white">
-                <div className="container mx-auto px-4">
+        <div id="content_middle" className="">
+            <div className="bg-[#000080]">
+                <div className="container  ">
                     <div className="flex justify-between">
                         <div className="w-1/3">
-                            {/* Left column */}
                         </div>
                         <div className="w-2/3">
-                            {/* Right column */}
-                            <h1 className="text-3xl font-bold mb-4">Contact Us!</h1>
-                            <p className="text-lg">
+                            <h1 className="text-3xl font-bold mb-4 text-white">Contact Us!</h1>
+                            <p className="text-lg text-white">
                                 Feel free to reach out to us for any queries, assistance, or feedback.
                                 We're here to help you make the most of your advertising needs.
                             </p>
@@ -22,22 +22,50 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            {/* Section 2 */}
-            <div className="bg-green-500 py-24">
+            <div className="bg-green-500 sl:hidden lg:block ">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center">
-                        <div className="w-1/2">
-                            <img src="/assets/images/phone-icon.jpg" alt="Phone Icon" className="h-16" />
+                        <div className="w-1/2 mt-2">
+                            <img src={phone} alt="Phone Icon" className="h-16" />
                             <h2 className="text-2xl font-bold text-white mt-4">Have Question? CALL US: <span className="text-yellow-400">+91-8121003003</span></h2>
                             <h3 className="text-lg text-white mt-2 font-bold">We're available Monday - Saturday (10 AM - 7 PM)</h3>
                         </div>
                         <div className="w-1/2">
                             <div className="ml-auto">
-                                <img src="/assets/images/email-icon.jpg" alt="Email Icon" className="h-16" />
+                                <img src={email} alt="Email Icon" className="h-16" />
                                 <h2 className="text-2xl font-bold text-white mt-4">Email: <a href="mailto:customercare@ads2publish.com" className="text-yellow-400">customercare@ads2publish.com</a></h2>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div className='bg-green-500 sl:block lg:hidden'>
+                <div>
+                    <div className='flex flex-row gap-4 p-3'>
+                        <img src={phone} alt='phone' className='w-10 h-10'/>
+                        <div>
+                        <p>HAVE QUESTION? CALL US:</p>
+                        <p className='text-white'> +91-8121003003</p>
+                        <p className='w-72'>We're available Monday - Saturday (10 AM - 7 PM)</p>
+
+                        </div>
+                    </div>
+                    <div className='border'></div>
+
+                    <div className='flex flex-row gap-4 p-3'>
+                        <img src={email} alt='phone' className='w-10 h-10'/>
+                        <div>
+                            <p>Email</p>
+                        <p className='text-white'>customer@gamil.com</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
                 </div>
             </div>
 

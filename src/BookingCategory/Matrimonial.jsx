@@ -5,6 +5,8 @@ import newsPaper1 from "../assets/news1.png";
 import { Button, Radio, RadioGroup, FormControlLabel } from "@mui/material";
 import news2 from "../assets/News2.jpg";
 import Matrimonialinside from "../BookingCategory/Matrimonialinside";
+import phone from '../assets/phone.jpg'
+import email from "../assets/email-icon.jpg";
 
 const Matrimonial = () => {
   const [selectedAdType, setSelectedAdType] = useState("");
@@ -14,29 +16,29 @@ const Matrimonial = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="bg-[#000080] flex flex-row">
-        <div className="w-[40%]">
+    <div className=" lg:p-5 sl:p-4">
+      <div className="bg-[#000080] lg:flex lg:flex-row sl:flex sl:flex-col">
+        <div className=" lg:w-[40%] sl:w-[60%] sl:mt-2 sl:text-center  sl:justify-center ">
           <img src={newspaper} alt="news paper" className="ml-[40%]" />
           <img src={marrimonial} alt="matri" className="ml-[40%]" />
         </div>
-        <div className="w-[50%] font-bold text-white">
-          <p className="text-white text-4xl">
+        <div className=" lg:w-[50%] sl:w-full font-bold text-white sl:p-4">
+          <p className="text-white   sl:text-base lg:text-4xl sl:justify-center sl:items-center ">
             MATRIMONIAL AD IN THE HINDU NEWSPAPER
           </p>
-          <p className="mt-3">
+          <p className="mt-3 sl:flex sl:justify-center sl:items-center">
             Book The Hindu Matrimonial Ad at lowest cost and enjoy up to 50% off
             on Newspaper Ad online booking. Follow few simple steps and get
             Wanted Bride & Groom Ad published in Sunday The Hindu Matrimonial
             Classifieds section.
           </p>
-          <p className="mt-3">
+          <p className="mt-3 sl:text-sm">
             Newspaper Ads ➧ The Hindu Advertisement ➧ Matrimonial
           </p>
         </div>
       </div>
 
-      <div className="flex flex-row gap-5 bg-[#0ABF79] p-5">
+      <div className="flex sl:hidden lg:block flex-row gap-5 bg-[#0ABF79] p-5">
         <div>
           <p className="text-2xl">The Hindu Matrimonial AC Contact</p>
           <p className="text-2xl text-white">Contact: +91- 8121003003</p>
@@ -47,9 +49,33 @@ const Matrimonial = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center items-center gap-5 mt-2">
+
+      <div className=" mt-4 sl:block lg:hidden">
+
+<div  className=" sl:flex sl:flex-row gap-5 bg-green-500  ">
+    <div>
+      <img src={phone} alt="phone"/>
+    </div>
+    <div>
+      <p className="text-white">Need Help Call!</p>
+      <p className="text-white">Phone:+91 8182883733</p>
+    </div>
+  </div>
+  <div  className="flex flex-row gap-5 mt-1 bg-green-500">
+    <div>
+      <img src={email} alt="email"/>
+    </div>
+    <div>
+      <p className="text-white">Email</p>
+      <p className="text-white">Customarecare@gmail.com</p>
+    </div>
+  
+  </div>
+</div> 
+
+      <div className=" lg:flex lg:flex-row sl:flex sl:flex-col justify-center items-center gap-5 mt-2 ">
         <div>
-          <h1 className="font-bold">Choose Ad Type</h1>
+          <h1 className="font-bold text-[#000080]">Choose Ad Type</h1>
         </div>
         <RadioGroup
           row
@@ -82,10 +108,10 @@ const Matrimonial = () => {
 
       {selectedAdType === "classifiedText" && (
         <div>
-          <p className="text-2xl">BOOK AD BY CHOOSING A MATRIMONIAL PACKAGE :</p>
+          <p className=" lg:text-2xl sl:text-sm font-bold  text-[#000080]">BOOK AD BY CHOOSING A MATRIMONIAL PACKAGE :</p>
 
           <p className="font-bold">Hindu Matrimonial - All Editions</p>
-          <div className="flex flex-row w-[50%] gap-5">
+          <div className=" lg:flex lg:flex-row lg:w-[50%] lg:gap-5 sl:flex sl:flex-row sl:gap-4">
             <div className="font-normal">
               Matrimonial ad publish in{" "}
               <span className="text-red-800">
@@ -101,7 +127,7 @@ const Matrimonial = () => {
           </div>
 
           <p className="font-bold">Hindu Matrimonial ad (English + Tamil)</p>
-          <div className="w-[50%] flex flex-row gap-5">
+          <div className="lg:flex lg:flex-row lg:w-[50%] lg:gap-5 sl:flex sl:flex-row sl:gap-4">
             <div>
               <p>
                 Matrimonial ad publish in Hindu (English) & Hindu Tamil (Tamil)
@@ -114,7 +140,7 @@ const Matrimonial = () => {
           </div>
 
           <p className="font-bold">Hindu Matrimonial 2 Ads Package</p>
-          <div className="w-[50%] flex flex-row gap-5">
+          <div className="lg:flex lg:flex-row lg:w-[50%] lg:gap-5 sl:flex sl:flex-row sl:gap-4">
             <div>
               <p>
                 Matrimonial ad publish in Hindu All Edition newspapers on
@@ -129,7 +155,7 @@ const Matrimonial = () => {
           </div>
 
           <p className="font-bold">Hindu Matrimonial 4 Ads Package</p>
-          <div className="w-[50%] flex flex-row gap-5">
+          <div className="lg:flex lg:flex-row lg:w-[50%] lg:gap-5 sl:flex sl:flex-row sl:gap-4">
             <div>
               <p>
                 Matrimonial ad publish in Hindu All Edition newspapers on
@@ -144,7 +170,7 @@ const Matrimonial = () => {
           </div>
 
           <p className="font-bold">The Hindu - Marriage Bureau Advertisements</p>
-          <div className="w-[50%] flex flex-row gap-5">
+          <div className="lg:flex lg:flex-row lg:w-[50%] lg:gap-5 sl:flex sl:flex-row sl:gap-4">
             <div>
               <p>
                 Best for Marriage Bureau Includes: Hindu - Tamil Nadu, Kerala,
@@ -196,7 +222,7 @@ const Matrimonial = () => {
 
       <div className="mt-10">
         <div>
-          <h2>
+          <h2 className="font-bold text-[#000080]">
             BOOK MATRIMONIAL AD IN THE HINDU THROUGH TWO EFFECTIVE AD FORMATS:
           </h2>
         </div>
@@ -222,8 +248,8 @@ const Matrimonial = () => {
       </div>
 
       <div className="mt-4">
-        <div>
-          <h1>HOW TO BOOK MATRIMONIAL AD IN THE HINDU NEWSPAPER?</h1>
+        <div className="text-sm font-bold]">
+          <h1 className=" text-[#000080] font-bold">HOW TO BOOK MATRIMONIAL AD IN THE HINDU NEWSPAPER?</h1>
           <p>
             Matrimonial ad in The Hindu newspaper can be booked online. Here's a
             step-by-step guide:

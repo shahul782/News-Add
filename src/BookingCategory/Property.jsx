@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import newspaper from "../assets/hinduimg.png";
 import property from "../assets/property.png";
 import news2 from "../assets/News2.jpg";
+import phone from '../assets/phone.jpg'
+import email from "../assets/email-icon.jpg";
 import newsPaper1 from "../assets/news1.png";
 import { Button, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 
@@ -58,14 +60,14 @@ const Property = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="bg-[#000080] flex flex-row">
-        <div className="w-[40%]">
-          <img src={newspaper} alt="news paper" className="ml-[40%]" />
-          <img src={property} alt="matri" className="ml-[40%]" />
+    <div className="lg:p-5 sl:p-4 ">
+      <div className="bg-[#000080]  lg:flex lg:flex-row sl:flex sl:flex-col">
+        <div className=" lg:w-[40%] sl:w-[80%] sl:mt-2">
+          <img src={newspaper} alt="news paper" className=" lg:ml-[40%] sl:ml-5  " />
+          <img src={property} alt="matri" className=" lg:ml-[40%] sl:ml-5" />
         </div>
-        <div className="w-[50%] font-bold text-white">
-          <p className="text-white text-4xl">
+        <div className="lg:w-[50%] sl:w-full font-bold text-white sl:p-3">
+          <p className="text-white  lg:text-4xl sl:text-xl">
             RECRUITMENTS AD IN THE HINDU NEWSPAPER
           </p>
           <p className="mt-3">
@@ -80,7 +82,7 @@ const Property = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-5 bg-[#0ABF79] p-5">
+      <div className="flex flex-row gap-5 sl:hidden lg:block bg-[#0ABF79] p-5">
         <div>
           <p className="text-2xl">The Hindu Matrimonial AC Contact</p>
           <p className="text-2xl text-white">Contact: +91- 8121003003</p>
@@ -91,7 +93,33 @@ const Property = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center items-center gap-5 mt-2">
+      
+     <div className=" mt-4 sl:block lg:hidden">
+
+<div  className=" sl:flex sl:flex-row gap-5 bg-green-500  ">
+    <div>
+      <img src={phone} alt="phone"/>
+    </div>
+    <div>
+      <p className="text-white">Need Help Call!</p>
+      <p className="text-white">Phone:+91 8182883733</p>
+    </div>
+  </div>
+   <div  className="flex flex-row gap-5 mt-1 bg-green-500">
+    <div>
+      <img src={email} alt="email"/>
+    </div>
+    <div>
+      <p className="text-white">Email</p>
+      <p className="text-white">Customarecare@gmail.com</p>
+    </div>
+  
+  </div>
+
+
+</div>  
+
+      <div className=" lg:flex lg:flex-row sl:flex sl:flex-col justify-center items-center lg:gap-5 sl:gap-4 mt-2">
         <div>
           <h1 className="font-bold">Choose Ad Type</h1>
         </div>

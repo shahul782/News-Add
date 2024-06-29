@@ -4,61 +4,56 @@ import Maininside2 from "./Maininside2";
 const Maininside = () => {
   return (
     <div>
-   <div className="flex justify-center items-center h-screen">
-  <table
-    cellspacing="4"
-    cellpadding="4"
-    style={{
-      textAlign: "center",
-      width: "70%",
-      margin: "0 auto",
-      gap: "5px",
-    }}
-  >
+<div class="flex justify-center items-center lg:h-screen sl:w-full lg:w-[50%] lg:ml-80 sl:ml-2 lg:gap-1 sl:gap-4">
+  <table class="table-auto text-center w-full">
     <tbody>
       <tr>
         <td>
           <a href="//www.bhavesads.com/the-hindu/display-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-display.jpg"
-              alt="The Hindu Display Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Display Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-display.jpg"
+                alt="The Hindu Display Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Display Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/metro-plus-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-metro-plus.jpg"
-              alt="The Hindu Metro Plus Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Metro Plus Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-metro-plus.jpg"
+                alt="The Hindu Metro Plus Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Metro Plus Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/property-plus-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-property-plus.jpg"
-              alt="The Hindu Property Plus Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Property Plus Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-property-plus.jpg"
+                alt="The Hindu Property Plus Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Property Plus Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/obituary-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-obituary.jpg"
-              alt="The Hindu Obituary Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> The Hindu Obituary Ad</span>
+            <div class="flex flex-col items-center mt-2">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-obituary.jpg"
+                alt="The Hindu Obituary Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 ml-3">The Hindu Obituary Ad</span>
+            </div>
           </a>
         </td>
       </tr>
@@ -68,46 +63,50 @@ const Maininside = () => {
       <tr>
         <td>
           <a href="//www.bhavesads.com/the-hindu/empower-opportunities-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-empower.jpg"
-              alt="The Hindu Empower Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Empower Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-empower.jpg"
+                alt="The Hindu Empower Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Empower Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/education-plus-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-education-plus.jpg"
-              alt="The Hindu Education Plus Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Education Plus Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-education-plus.jpg"
+                alt="The Hindu Education Plus Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Education Plus Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/friday-review-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-friday-review.jpg"
-              alt="The Hindu Friday Review Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Friday Review Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-friday-review.jpg"
+                alt="The Hindu Friday Review Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Friday Review Ad</span>
+            </div>
           </a>
         </td>
         <td>
           <a href="//www.bhavesads.com/the-hindu/public-notice-ad-rates">
-            <img
-              src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-public-notice.jpg"
-              alt="The Hindu Public Notice Ad Rates"
-              style={{ width: "150px", height: "177px", marginLeft: "50px" }}
-            />
-            <br />
-            <span className="text-[red]"> Public Notice Ad</span>
+            <div class="flex flex-col items-center">
+              <img
+                src="//www.bhavesads.com/wp-content/uploads/2016/07/the-hindu-public-notice.jpg"
+                alt="The Hindu Public Notice Ad Rates"
+                class="lg:w-[150px] lg:h-[177px] lg:ml-[20px] sl:w-[100px] sl:h-[100px]"
+              />
+              <span class="text-red-500 mt-2">Public Notice Ad</span>
+            </div>
           </a>
         </td>
       </tr>
@@ -116,9 +115,10 @@ const Maininside = () => {
 </div>
 
 
+
      
 <div className="flex justify-center mt-4">
-  <h1 className="font-bold text-2xl text-[#000080]">
+  <h1 className=" lg:font-bold lg:text-2xl sl:text-xl sl:font-bold  text-[#000080]">
     Process of booking an ad in The Hindu newspaper
   </h1>
 </div>

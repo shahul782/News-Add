@@ -176,7 +176,7 @@ const Matrimonialinside = () => {
         )}
       </div>
 
-      <div className="p-4 w-full max-w-3xl">
+      <div className=" p-4 w-full max-w-3xl">
         <div
           className="flex justify-between items-center bg-slate-400 p-4 cursor-pointer rounded-2xl"
           onClick={toggleWantedBrideAds}

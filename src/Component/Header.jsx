@@ -6,19 +6,21 @@ import bookonline from "../assets/Bookonline.png";
 import addbooking from "../assets/addbooking.png";
 import Maininside from "../BookingCategory/Maininside";
 import phone from '../assets/phone.jpg'
+import Dropdown from "../BookingCategory/Dropdown";
+import Citydropdown from "../BookingCategory/Citydropdown";
 
 const Header = () => {
   return (
-    <div>
-      <div className="bg-[#00308F] flex flex-row p-5">
-        <div className="w-[40%]">
-          <img src={newspaper} alt="news paper" className="ml-[40%]  " />
+    <div className="sl:p-2">
+      <div className="bg-[#00308F]  lg:flex lg:flex-row sl:flex sl:flex-col   lg:p-5 sl:p-2">
+        <div className=" lg:w-[40%] sl:w-full">
+          <img src={newspaper} alt="news paper" className=" lg:ml-[40%]  sl:ml-3 " />
         </div>
-        <div className="w-[50%] font-bold text-white">
-          <p className="text-white text-4xl">
+        <div className=" lg:w-[50%] sl:w-full font-bold text-white">
+          <p className="text-white lg:text-4xl sl:text-xl">
             Books the Hindu Ads online Easily for News Paper
           </p>
-          <p className="mt-3">
+          <p className="mt-3 sl:w-full  ">
             The Hindu is an English-language daily newspaper owned by Kasturi
             and Sons Limited. Hindu has a massive reach in South India,
             especially Tamil Nadu. Instantly book Classifieds & Display Ads
@@ -32,13 +34,13 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-5">
-        <p className="font-semibold text-2xl text-[#483D8B] mr-[40%]">
+      <div className="flex justify-center items-center mt-5  ">
+        <p className="font-semibold text-2xl text-[#483D8B] lg:mr-[40%] sl:w-full sl:text-xl ">
           Select a Classified Ad Category to start online booking:
         </p>
       </div>
 
-      <div class="flex flex-col mt-5">
+      <div class="flex flex-col mt-5  lg:block sl:hidden  ">
         <div id="category">
           <ul class="list-none grid grid-cols-3 gap-0">
             <li class="flex items-center justify-center h-24">
@@ -224,7 +226,12 @@ const Header = () => {
         </div>
       </div>
 
-      <p className="flex justify-center items-center font-extrabold	 text-red-700">
+      <div className="sl:block lg:hidden   sl:justify-center sl:items-center ">
+        <Dropdown/>
+
+      </div>
+
+      <p className="flex justify-center items-center font-extrabold sl:mt-5	 text-red-700">
         OR
       </p>
 
@@ -232,7 +239,7 @@ const Header = () => {
         Go with Hindhu Edition:
       </h3>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center sl:hidden lg:block">
         <ul className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
           <li className="mb-4 sm:mb-0">
             <a href="/chennai">
@@ -243,7 +250,7 @@ const Header = () => {
             <span>(Circulation: 418,998 Copies)</span>
           </li>
           <li className="mb-4 sm:mb-0">
-            <a href="/classified-ad/the-hindu/hyderabad">
+            <a href="/hyderabad">
               <strong className="block font-semibold bg-gray-200 p-4">
                 Hyderabad City
               </strong>
@@ -251,7 +258,7 @@ const Header = () => {
             <span>(Circulation: XYZ Copies)</span>
           </li>
           <li className="mb-4 sm:mb-0">
-            <a href="/classified-ad/the-hindu/karnataka">
+            <a href="/karnataka">
               <strong className="block font-semibold bg-gray-200 p-4">
                 Karnataka
               </strong>
@@ -308,8 +315,13 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <div className="sl:block lg:hidden ">
+        <Citydropdown />
 
-      <div className="flex flex-row items-center justify-between h-[60%] w-[70%] ml-[16%] bg-green-500 p-4">
+      </div>
+
+
+      <div className="lg:flex  lg:flex-row items-center lg:block sl:hidden justify-between h-[60%] w-[70%] ml-[16%] bg-green-500 p-4">
         <div className="flex flex-row items-center gap-4 ml-7">
           <div>
             <img src={phone} alt="phone" />
@@ -332,22 +344,46 @@ const Header = () => {
         </div>
       </div>
 
+
+     <div className=" mt-4 sl:block lg:hidden">
+
+      <div  className=" sl:flex sl:flex-row gap-5 bg-green-500  ">
+          <div>
+            <img src={phone} alt="phone"/>
+          </div>
+          <div>
+            <p className="text-white">Need Help Call!</p>
+            <p className="text-white">Phone:+91 8182883733</p>
+          </div>
+        </div>
+        <div  className="flex flex-row gap-5 mt-1 bg-green-500">
+          <div>
+            <img src={email} alt="email"/>
+          </div>
+          <div>
+            <p className="text-white">Email</p>
+            <p className="text-white">Customarecare@gmail.com</p>
+          </div>
+        
+        </div>
+      </div> 
+
       <div className="flex justify-center items-center">
-        <p className="font-bold	 text-2xl text-[#483D8B] ">
+        <p className=" lg:font-bold	lg:text-2xl text-[#483D8B] sl:text-xl sl:font-bold ">
           The Hindu Classifieds: A Cost-Effective Way to Reach Targeted
           Audiences in Chennai
         </p>
       </div>
 
-      <div className="flex flex-row w-[90%] h-full ml-36 items-center justify-center">
-        <div className="flex flex-row items-center">
+      <div className=" lg:flex lg:flex-row lg:w-[90%] lg:h-full lg:ml-36 items-center justify-center sl:w-[100%]">
+        <div className="lg:flex lg:flex-row items-center sl:flex sl:flex-col">
           <img
             src={bookonline}
             alt="book"
-            className="w-[100%] h-[100%] object-cover ml-14"
+            className="w-[100%] h-[100%] object-cover lg:ml-14  sl:w-[90%] sl:h-[97%]"
           />
-          <div className="flex items-center p-4">
-            <p className="w-[80%]">
+          <div className="flex items-center lg: p-4 sl:p-1 ">
+            <p className=" lg:w-[80%] sl:w-full">
               The Hindu Classifieds is a section within The Hindu newspaper
               dedicated to short, text-based advertisements for a variety of
               needs. It's a budget-friendly option for individuals and
@@ -365,7 +401,7 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center items-center h-full">
-        <p className="w-[70%]">
+        <p className=" lg:w-[70%] sl:w-full">
           Classified ads typically have limited space (charged per line). The
           Hindu offers optional enhancements like bolding or border to make your
           ad stand out. Ads2Publish offer convenient online booking of
@@ -375,17 +411,17 @@ const Header = () => {
         </p>
       </div>
 
-      <div className="w-[70%] ml-48 font-bold	 text-2xl">
+      <div className=" lg:w-[70%] lg:ml-48 font-bold sl:ml-1 sl:w-full	 text-2xl">
         <h1 className="text-[#483D8B]">
           The Hindu Classifieds Ads specifications:
         </h1>
       </div>
-      <div className="flex flex-row mt-5 w-[90%]">
+      <div className="lg:flex lg:flex-row sl:flex sl:flex-col lg:mt-5 lg:w-[90%]">
         <div>
           <img
             src={addbooking}
             alt="addbooking"
-            className="w-[50%] h-[70%] object-cover ml-48 mt-4"
+            className="w-[50%] h-[70%] object-cover lg:ml-48 mt-4"
           />
         </div>
         <div class="overflow-x-auto mt-4 mr-5 ">
@@ -443,11 +479,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="ml-52 w-[75%] mt-4">
+      <div className=" lg:ml-52 lg:w-[75%] mt-4 sl:w-full">
         <h1 className="font-bold text-[#483D8B] text-center">
           The Hindu Display Advertising
         </h1>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           <p className="text-center">
             The Hindu offers a comprehensive suite of advertising options to
             cater to your specific needs. Whether you are interested in
